@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinLit — Financial Literacy for High Schoolers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Fin<span>Lit</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="budgeting.html">Budgeting</a></li>
+      <li><a href="saving.html">Saving</a></li>
+      <li><a href="investing.html">Investing</a></li>
+      <li><a href="credit.html">Credit</a></li>
+      <li><a href="taxes.html">Taxes</a></li>
+      <li><a href="college.html">College Costs</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Money Skills for Real Life</h1>
+  <p>Everything you need to know about personal finance — explained in plain English, built for high schoolers.</p>
+  <div class="hero-badges">
+    <span class="badge">Budgeting</span>
+    <span class="badge">Saving</span>
+    <span class="badge">Investing</span>
+    <span class="badge">Credit</span>
+    <span class="badge">Taxes</span>
+    <span class="badge">College Costs</span>
+  </div>
+  <a href="#topics" class="btn btn-white">Start Learning</a>
+</div>
+
+<section class="topics" id="topics">
+  <div class="section-title">
+    <h2>Choose a Topic</h2>
+    <p>Six essential areas of financial literacy — start anywhere.</p>
+  </div>
+  <div class="topic-grid">
+
+    <a href="budgeting.html" class="topic-card">
+      <div class="topic-icon">💰</div>
+      <h3>Budgeting</h3>
+      <p>Learn how to manage your money with the 50/30/20 rule, track expenses, and stop living paycheck to paycheck.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+    <a href="saving.html" class="topic-card">
+      <div class="topic-icon">🏦</div>
+      <h3>Saving & Emergency Funds</h3>
+      <p>Understand why saving matters, how to build an emergency fund, and how to make your money grow over time.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+    <a href="investing.html" class="topic-card">
+      <div class="topic-icon">📈</div>
+      <h3>Investing Basics</h3>
+      <p>Stocks, index funds, compound interest, and why starting early is the single biggest advantage you have.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+    <a href="credit.html" class="topic-card">
+      <div class="topic-icon">💳</div>
+      <h3>Credit Scores & Debt</h3>
+      <p>What a credit score actually is, how it's calculated, and how to use credit cards without falling into debt.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+    <a href="taxes.html" class="topic-card">
+      <div class="topic-icon">🧾</div>
+      <h3>Taxes & Paychecks</h3>
+      <p>Decode your first paycheck, understand what taxes are taken out and why, and learn how to file a tax return.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+    <a href="college.html" class="topic-card">
+      <div class="topic-icon">🎓</div>
+      <h3>College Costs & Student Loans</h3>
+      <p>Break down tuition, financial aid, FAFSA, and how to borrow smart so you don't graduate buried in debt.</p>
+      <span class="read-more">Read article →</span>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>FinLit — Built to help high schoolers take control of their financial future.</p>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
